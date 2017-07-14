@@ -1,0 +1,2 @@
+<h2>{{ objects.Title }} </h2>
+<p>{{  objects.Content }} </p>
