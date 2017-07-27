@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'comments'
+    'comments',
 ]
 
 MIDDLEWARE = [
@@ -106,13 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-HAYSTACK_CONNECTIONS={
-    'default':{
-        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'PATH': os.path.join(PROJECT_PATH,'whoosh_index')
-    },
-}
-
 
 
 
@@ -135,7 +128,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static/*')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 
 
