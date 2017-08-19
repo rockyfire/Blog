@@ -20,3 +20,7 @@ def weixin(request):
     return HttpResponse(echostr)
 
 
+
+
+
+
