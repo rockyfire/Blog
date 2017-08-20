@@ -6,8 +6,13 @@ from hashlib import sha1
 from lxml import etree
 from django.utils.encoding import smart_str
 
+from django.template.loader import render_to_string
+import time
+import random
 
+global last_time
 
+last_time = 1
 
 
 # Create your views here.
@@ -35,4 +40,78 @@ def wechat(request):
         return HttpResponse(response_xml)
 
 def main_handle(xml):
+    global  last_time
+
+    # Event 事件类型，subscribe(订阅)、unsubscribe(取消订阅)
+    try:
+        event=xml.find('Event').text
+    except:
+        event='noting '
+
+
+    try:
+        msg_type=xml.find('MsgType').text
+        msg_content=xml.find('Content').text
+    except:
+        msg_type=''
+        msg_content=''
+
+    print ('*************')
+    print (msg_type,msg_content)
+
+    if event == 'subscribe':
+        text = '欢迎关注公众号'
+        return parser_text(xml,text)
+
+    if msg_type == 'text':
+        if msg_content == 'hello':
+            text = 'world'
+            return parser_text(xml,text)
+        else:
+            return 'success'
+
     return 'success'
+
+
+
+
+def parser_text(xml,text):
+    '''
+        待处理的文本数据 转为xml发送给微信服务器
+    '''
+
+    print ("--------------------------")
+    print (text)
+
+    # 反转
+    fromUser = xml.find('ToUserName').text
+    toUser = xml.find('FromUserName').text
+
+    # 关于重试的消息排重，推荐使用msgid排重。 用户发给微信服务器的消息每一个都有MsgId防止重发
+
+    try:
+        message_id=xml.find('MsgId').text
+    except:
+        message_id=''
+
+    # 时间戳
+    nowtime=str(int(time.time()))
+
+    context={
+        'FromUserName':fromUser,
+        'ToUserName':toUser,
+        'Content':text,
+        'time':nowtime,
+        'id':message_id,
+    }
+
+    return render_to_string('wechat/format.xml',context=context)
+
+
+
+
+
+
+
+
+
