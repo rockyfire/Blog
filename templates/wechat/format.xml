@@ -1,8 +1,16 @@
 <xml>
-    <ToUserName><![CDATA[{{ToUserName}}]]></ToUserName>
-    <FromUserName><![CDATA[{{FromUserName}}]]></FromUserName>
+    <ToUserName>
+        <![CDATA[{{ ToUserName }}]]>
+    </ToUserName>
+    <FromUserName>
+        <![CDATA[{{ FromUserName }}]]>
+    </FromUserName>
     <CreateTime>{{ time }}</CreateTime>
-    <MsgType><![CDATA[text]]></MsgType>
-    <Content><![CDATA[{{Content}}]]></Content>
+    <MsgType>
+        <![CDATA[text]]>
+    </MsgType>
+    <Content>
+        <![CDATA[{{ Content }}]]>
+    </Content>
     <MsgId>{{ id }}</MsgId>
 </xml>
