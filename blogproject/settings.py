@@ -26,7 +26,7 @@ PROJECT_PATH=os.path.abspath(os.path.dirname(__name__))
 SECRET_KEY = 'qhg7x=#%)3!&%*-q!2gnw#wt8coz&mm@mw#w-#=9@40f=&l_^2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -130,6 +130,61 @@ USE_TZ = False
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {#日志格式
+       'standard': {
+            'format': '%(asctime)s [%(threadName)s:%(thread)d] [%(name)s:%(lineno)d] [%(module)s:%(funcName)s] [%(levelname)s]- %(message)s'
+       },
+       'simple': {
+            'format': ' %(message)s '
+       },
+    },
+    'filters': {#过滤器
+    },
+    'handlers': {#处理器
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
+        },
+        'debug': {#输出到文件
+            'level':'DEBUG',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, "log",'debug.log'),#日志输出文件
+            'maxBytes':1024*1024*5,#文件大小
+            'backupCount': 5,#备份份数
+            'formatter':'simple',#使用哪种formatters日志格式
+        },
+        'console':{#输出到控制台
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+    },
+    'loggers': {#logging管理器
+        'django': {
+            'handlers': ['debug'],
+            'level': 'DEBUG',
+            'propagate': False
+        },
+        'django.request': {
+            'handlers': ['debug'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'wechat':{
+            'handlers': ['debug'],
+            'level': 'DEBUG',
+            'propagate': True
+        }
+    }
+}
+
+
+
 
 
 

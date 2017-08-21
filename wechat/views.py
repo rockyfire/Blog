@@ -9,6 +9,7 @@ from django.utils.encoding import smart_str
 from django.template.loader import render_to_string
 import time
 import random
+import logging
 
 global last_time
 
@@ -16,9 +17,11 @@ last_time = 1
 
 
 # Create your views here.
+# logging.basicConfig(filename='logger.log',level=logging.DEBUG)
+logger=logging.getLogger("wechat")
+
 def wechat(request):
     if request.method == 'GET':
-
         signature = request.GET.get('signature','')
         timestamp = request.GET.get('timestamp','')
         nonce = request.GET.get('nonce','')
@@ -31,11 +34,13 @@ def wechat(request):
 
         if key.upper() != signature.upper():
             echostr = 'failure'
-
         return HttpResponse(echostr)
-    if request.method == 'POST':
+    else:
         data = smart_str(request.body)
         xml = etree.fromstring(data)
+
+        logger.info(xml)
+
         response_xml = main_handle(xml)
         return HttpResponse(response_xml)
 
@@ -46,7 +51,8 @@ def main_handle(xml):
     try:
         event=xml.find('Event').text
     except:
-        event='noting '
+        event='noting'
+
 
 
     try:
