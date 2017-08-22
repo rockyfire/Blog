@@ -2,24 +2,22 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 from hashlib import sha1
-
 from lxml import etree
 from django.utils.encoding import smart_str
-
 from django.template.loader import render_to_string
+from django.views.decorators.csrf import csrf_exempt
+
 import time
-import random
 import logging
 
 global last_time
-
 last_time = 1
 
 
 # Create your views here.
-# logging.basicConfig(filename='logger.log',level=logging.DEBUG)
+#logging.basicConfig(filename='logger.log',level=logging.DEBUG)
 logger=logging.getLogger("wechat")
-
+@csrf_exempt
 def wechat(request):
     if request.method == 'GET':
         signature = request.GET.get('signature','')
@@ -34,12 +32,14 @@ def wechat(request):
 
         if key.upper() != signature.upper():
             echostr = 'failure'
+            logger.info('Get test')
+            logger.debug("---------------")
         return HttpResponse(echostr)
     else:
         data = smart_str(request.body)
         xml = etree.fromstring(data)
 
-        logger.info(xml)
+        logger.info(str(xml))
 
         response_xml = main_handle(xml)
         return HttpResponse(response_xml)
@@ -52,8 +52,6 @@ def main_handle(xml):
         event=xml.find('Event').text
     except:
         event='noting'
-
-
 
     try:
         msg_type=xml.find('MsgType').text
