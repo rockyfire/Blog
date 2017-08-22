@@ -16,8 +16,10 @@
 第一步,博客                              --Get
 
 第二步,微信公众号 
-网站搭建有问题退回到第一步  2017-08-16
 
+若干问题:
+- django logging 不要改变日志文件的内容,如果改变了要重启django
+- post请求时 会出现403错误 这是django本身防止跨站请求伪造的设计
 
 第三步,搬运笔记
 
@@ -30,3 +32,4 @@
 
 [安装web.py出错解决](https://github.com/webpy/webpy/issues/396)
 
+[解决跨站请求伪造](http://www.bkjia.com/ASPjc/1010798.html)
