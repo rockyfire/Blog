@@ -221,3 +221,12 @@ class TagView(ListView):
         tag=get_object_or_404(Tag,pk=self.kwargs.get('pk'))
         return super(TagView,self).get_queryset().filter(tags=tag)
 
+
+def query_name(request,name):
+    tag=get_object_or_404(Tag,name=name)
+    tags=Tag.objects.all()
+    # post_list = Post.objects.filter(tags=tag).order_by('-created_time')
+    # return render(request, 'blog/index.html', {'post_list': post_list})
+    for i in tags:
+        print (i)
+    return HttpResponse(tags)

@@ -6,7 +6,9 @@ from lxml import etree
 from django.utils.encoding import smart_str
 from django.template.loader import render_to_string
 from django.views.decorators.csrf import csrf_exempt
+from blog.models import Tag
 
+import re
 import time
 import logging
 
@@ -38,6 +40,10 @@ def wechat(request):
     else:
         data = smart_str(request.body)
         xml = etree.fromstring(data)
+        global  search_text
+        search_text=[]
+        for i in Tag.objects.all():
+            search_text.append(str(i))
 
         logger.info(str(xml))
 
@@ -46,7 +52,6 @@ def wechat(request):
 
 def main_handle(xml):
     global  last_time
-
     # Event 事件类型，subscribe(订阅)、unsubscribe(取消订阅)
     try:
         event=xml.find('Event').text
@@ -60,14 +65,21 @@ def main_handle(xml):
         msg_type=''
         msg_content=''
 
-    print ('*************')
-    print (msg_type,msg_content)
+    logger.info('*************')
+    logger.info(msg_type,msg_content)
+
 
     if event == 'subscribe':
         text = '欢迎关注公众号'
         return parser_text(xml,text)
 
     if msg_type == 'text':
+
+        for search_str in search_text:
+            if re.compile(search_str,msg_content,re.IGNORECASE):
+                text='http://fixyou.me/tag_name/'+msg_content+'/'
+                return parser_text(xml,text)
+
         if msg_content == 'hello':
             text = 'world'
             return parser_text(xml,text)
@@ -77,15 +89,10 @@ def main_handle(xml):
     return 'success'
 
 
-
-
 def parser_text(xml,text):
     '''
         待处理的文本数据 转为xml发送给微信服务器
     '''
-
-    print ("--------------------------")
-    print (text)
 
     # 反转
     fromUser = xml.find('ToUserName').text
