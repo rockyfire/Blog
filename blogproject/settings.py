@@ -153,7 +153,7 @@ LOGGING = {
         'debug': {#输出到文件
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR,'log','debug.log'),#日志输出文件
+            'filename': os.path.join(BASE_DIR, 'log', 'debug.log'),  # 日志输出文件
             'maxBytes':1024*1024*5,#文件大小
             'backupCount': 5,#备份份数
             'formatter':'simple',#使用哪种formatters日志格式

@@ -10807,3 +10807,1811 @@ AttributeError: 'QuerySet' object has no attribute 'name'
  "GET /tag_name/git/ HTTP/1.1" 200 23 
  "GET /tag_name/git/ HTTP/1.1" 200 23 
  "GET /tag_name/git/ HTTP/1.1" 200 23 
+ Exception while resolving variable 'error_msg' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_msg] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcfb1dad908>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcfb1dcf1e0>>, 'csrf_token': <SimpleLazyObject: 'DnpRyjrLiT7Jx0vYKqlySBWa9g0QxYbG2ol4BwIrtmXAKFr2elD3p5hdT08HRHti'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'DEBUG': 10}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcfb058b6a0>}, {}, {'page_obj': <Page 1 of 3>, 'left': [], 'first': False, 'post_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'left_has_more': False, 'last': False, 'right_has_more': False, 'view': <blog.views.IndexView object at 0x7fcfb1de4160>, 'is_paginated': True, 'paginator': <django.core.paginator.Paginator object at 0x7fcfb055eb38>, 'object_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'right': range(2, 4)}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 23>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'has_previous' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_previous] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'number' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [number] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'paginator' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [paginator] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'has_next' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'toc' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [toc] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'request\': <WSGIRequest: GET \'/\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcfb1dad908>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcfb1dcf1e0>>, \'csrf_token\': <SimpleLazyObject: \'DnpRyjrLiT7Jx0vYKqlySBWa9g0QxYbG2ol4BwIrtmXAKFr2elD3p5hdT08HRHti\'>, \'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'SUCCESS\': 25, \'INFO\': 20, \'ERROR\': 40, \'DEBUG\': 10}, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcfb058b6a0>}, {}, {\'page_obj\': <Page 1 of 3>, \'left\': [], \'first\': False, \'post_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'left_has_more\': False, \'last\': False, \'right_has_more\': False, \'view\': <blog.views.IndexView object at 0x7fcfb1de4160>, \'is_paginated\': True, \'paginator\': <django.core.paginator.Paginator object at 0x7fcfb055eb38>, \'object_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'right\': range(2, 4)}, {\'block\': <Block Node: toc. Contents: [<TextNode: \'\\n\\n                <div cl\'>, <Variable Node: toc|safe>, <TextNode: \'\\n                </div>\\n\\n\'>, <django.template.library.SimpleNode object at 0x7fcfb05200f0>, <TextNode: \'\\n                    <ul>\'>, <For Node: for post in recent_post_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7fcfb051a9b0>, <TextNode: \'\\n                    <ul>\'>, <For Node: for date in date_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7fcfb051ad30>, <TextNode: \'\\n                    <ul>\'>, <For Node: for category in category_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7fcfb0520be0>, <TextNode: \'\\n                    <ul>\'>, <For Node: for tag in tag_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.defaulttags.URLNode object at 0x7fcfb051c390>, <TextNode: \'"><span class="ion-social\'>]>}]'
+ "GET / HTTP/1.1" 200 13138 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error_msg' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_msg] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/tag_name/git/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcfb055ee48>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcfb0574c80>>, 'csrf_token': <SimpleLazyObject: 'zVnafD6c126ldMu7hbXUIlAo7FB7zMb3YWjniQnScvWcqrqbL6fpfPVrRpJYTvtF'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'DEBUG': 10}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcfb04f9b70>}, {}, {'post_list': <QuerySet [<Post: Web_sites>]>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 23>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'has_previous' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_previous] in '<QuerySet [<Post: Web_sites>]>'
+ Exception while resolving variable 'number' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [number] in '<QuerySet [<Post: Web_sites>]>'
+ Exception while resolving variable 'paginator' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [paginator] in '<QuerySet [<Post: Web_sites>]>'
+ Exception while resolving variable 'has_next' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in '<QuerySet [<Post: Web_sites>]>'
+ Exception while resolving variable 'is_paginated' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_paginated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_paginated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_paginated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_paginated] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/tag_name/git/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcfb055ee48>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcfb0574c80>>, 'csrf_token': <SimpleLazyObject: 'zVnafD6c126ldMu7hbXUIlAo7FB7zMb3YWjniQnScvWcqrqbL6fpfPVrRpJYTvtF'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'DEBUG': 10}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcfb04f9b70>}, {}, {'post_list': <QuerySet [<Post: Web_sites>]>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 23>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'is_paginated' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_paginated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_paginated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_paginated'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_paginated] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/tag_name/git/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcfb055ee48>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcfb0574c80>>, 'csrf_token': <SimpleLazyObject: 'zVnafD6c126ldMu7hbXUIlAo7FB7zMb3YWjniQnScvWcqrqbL6fpfPVrRpJYTvtF'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'SUCCESS': 25, 'INFO': 20, 'ERROR': 40, 'DEBUG': 10}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcfb04f9b70>}, {}, {'post_list': <QuerySet [<Post: Web_sites>]>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 23>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'toc' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [toc] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'request\': <WSGIRequest: GET \'/tag_name/git/\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcfb055ee48>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcfb0574c80>>, \'csrf_token\': <SimpleLazyObject: \'zVnafD6c126ldMu7hbXUIlAo7FB7zMb3YWjniQnScvWcqrqbL6fpfPVrRpJYTvtF\'>, \'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'SUCCESS\': 25, \'INFO\': 20, \'ERROR\': 40, \'DEBUG\': 10}, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcfb04f9b70>}, {}, {\'post_list\': <QuerySet [<Post: Web_sites>]>}, {\'block\': <Block Node: toc. Contents: [<TextNode: \'\\n\\n                <div cl\'>, <Variable Node: toc|safe>, <TextNode: \'\\n                </div>\\n\\n\'>, <django.template.library.SimpleNode object at 0x7fcfb05200f0>, <TextNode: \'\\n                    <ul>\'>, <For Node: for post in recent_post_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7fcfb051a9b0>, <TextNode: \'\\n                    <ul>\'>, <For Node: for date in date_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7fcfb051ad30>, <TextNode: \'\\n                    <ul>\'>, <For Node: for category in category_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7fcfb0520be0>, <TextNode: \'\\n                    <ul>\'>, <For Node: for tag in tag_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.defaulttags.URLNode object at 0x7fcfb051c390>, <TextNode: \'"><span class="ion-social\'>]>}]'
+ "GET /tag_name/git/ HTTP/1.1" 200 10531 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error_msg' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_msg] in "[{'None': None, 'False': False, 'True': True}, {'csrf_token': <SimpleLazyObject: 'vU2cYPHSFczpy7IQuXrxwzNqwhE5aYe4UVYp12YyQFpgLMEUYSJ2338tg1MWuHwG'>, 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a8098828>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a8073780>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a80b51e0>>}, {}, {'first': False, 'left': [], 'page_obj': <Page 1 of 3>, 'is_paginated': True, 'right_has_more': False, 'object_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'last': False, 'left_has_more': False, 'right': range(2, 4), 'post_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'view': <blog.views.IndexView object at 0x7f22a8098898>, 'paginator': <django.core.paginator.Paginator object at 0x7f22a8049a90>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 25>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'has_previous' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_previous] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'number' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [number] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'paginator' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [paginator] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'has_next' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'toc' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [toc] in '[{\'None\': None, \'False\': False, \'True\': True}, {\'csrf_token\': <SimpleLazyObject: \'vU2cYPHSFczpy7IQuXrxwzNqwhE5aYe4UVYp12YyQFpgLMEUYSJ2338tg1MWuHwG\'>, \'request\': <WSGIRequest: GET \'/\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a8098828>, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30}, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a8073780>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a80b51e0>>}, {}, {\'first\': False, \'left\': [], \'page_obj\': <Page 1 of 3>, \'is_paginated\': True, \'right_has_more\': False, \'object_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'last\': False, \'left_has_more\': False, \'right\': range(2, 4), \'post_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'view\': <blog.views.IndexView object at 0x7f22a8098898>, \'paginator\': <django.core.paginator.Paginator object at 0x7f22a8049a90>}, {\'block\': <Block Node: toc. Contents: [<TextNode: \'\\n\\n                <div cl\'>, <Variable Node: toc|safe>, <TextNode: \'\\n                </div>\\n\\n\'>, <django.template.library.SimpleNode object at 0x7f22a0514198>, <TextNode: \'\\n                    <ul>\'>, <For Node: for post in recent_post_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050da58>, <TextNode: \'\\n                    <ul>\'>, <For Node: for date in date_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050ddd8>, <TextNode: \'\\n                    <ul>\'>, <For Node: for category in category_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a0514c88>, <TextNode: \'\\n                    <ul>\'>, <For Node: for tag in tag_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.defaulttags.URLNode object at 0x7f22a0510438>, <TextNode: \'"><span class="ion-social\'>]>}]'
+ "GET / HTTP/1.1" 200 13126 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<input type="email" name="email" maxlength="255" id="id_email" required />'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea>'
+ "GET /post/3/ HTTP/1.1" 200 8811 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error_msg' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_msg] in "[{'None': None, 'False': False, 'True': True}, {'csrf_token': <SimpleLazyObject: 'sOPaopRRUtc0D15czAavLko5uHyyaisyRPLnrC8x5W2RQG1g3vs0iOJ8erGpu1Ka'>, 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a2422470>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a2422b00>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a2413620>>}, {}, {'first': False, 'left': [], 'page_obj': <Page 1 of 3>, 'is_paginated': True, 'right_has_more': False, 'object_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'last': False, 'left_has_more': False, 'right': range(2, 4), 'post_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'view': <blog.views.IndexView object at 0x7f22a24225c0>, 'paginator': <django.core.paginator.Paginator object at 0x7f22a2422668>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 25>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'has_previous' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_previous] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'number' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [number] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'paginator' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [paginator] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'has_next' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'toc' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [toc] in '[{\'None\': None, \'False\': False, \'True\': True}, {\'csrf_token\': <SimpleLazyObject: \'sOPaopRRUtc0D15czAavLko5uHyyaisyRPLnrC8x5W2RQG1g3vs0iOJ8erGpu1Ka\'>, \'request\': <WSGIRequest: GET \'/\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a2422470>, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30}, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a2422b00>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a2413620>>}, {}, {\'first\': False, \'left\': [], \'page_obj\': <Page 1 of 3>, \'is_paginated\': True, \'right_has_more\': False, \'object_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'last\': False, \'left_has_more\': False, \'right\': range(2, 4), \'post_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'view\': <blog.views.IndexView object at 0x7f22a24225c0>, \'paginator\': <django.core.paginator.Paginator object at 0x7f22a2422668>}, {\'block\': <Block Node: toc. Contents: [<TextNode: \'\\n\\n                <div cl\'>, <Variable Node: toc|safe>, <TextNode: \'\\n                </div>\\n\\n\'>, <django.template.library.SimpleNode object at 0x7f22a0514198>, <TextNode: \'\\n                    <ul>\'>, <For Node: for post in recent_post_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050da58>, <TextNode: \'\\n                    <ul>\'>, <For Node: for date in date_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050ddd8>, <TextNode: \'\\n                    <ul>\'>, <For Node: for category in category_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a0514c88>, <TextNode: \'\\n                    <ul>\'>, <For Node: for tag in tag_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.defaulttags.URLNode object at 0x7f22a0510438>, <TextNode: \'"><span class="ion-social\'>]>}]'
+ "GET / HTTP/1.1" 200 13126 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error_msg' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_msg] in "[{'None': None, 'False': False, 'True': True}, {'csrf_token': <SimpleLazyObject: 'hXJcUkEbGlsg3XAdSTXIAEaRxjI7wGPzGYFpXxVRROi7gCwhmOfd78vUh3QYQp7b'>, 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a2418160>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a2418668>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a24136a8>>}, {}, {'first': False, 'left': [], 'page_obj': <Page 1 of 3>, 'is_paginated': True, 'right_has_more': False, 'object_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'last': False, 'left_has_more': False, 'right': range(2, 4), 'post_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'view': <blog.views.IndexView object at 0x7f22a24182b0>, 'paginator': <django.core.paginator.Paginator object at 0x7f22a2418358>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 25>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'has_previous' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_previous] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'number' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [number] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'paginator' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [paginator] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'has_next' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'toc' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [toc] in '[{\'None\': None, \'False\': False, \'True\': True}, {\'csrf_token\': <SimpleLazyObject: \'hXJcUkEbGlsg3XAdSTXIAEaRxjI7wGPzGYFpXxVRROi7gCwhmOfd78vUh3QYQp7b\'>, \'request\': <WSGIRequest: GET \'/\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a2418160>, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30}, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a2418668>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a24136a8>>}, {}, {\'first\': False, \'left\': [], \'page_obj\': <Page 1 of 3>, \'is_paginated\': True, \'right_has_more\': False, \'object_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'last\': False, \'left_has_more\': False, \'right\': range(2, 4), \'post_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'view\': <blog.views.IndexView object at 0x7f22a24182b0>, \'paginator\': <django.core.paginator.Paginator object at 0x7f22a2418358>}, {\'block\': <Block Node: toc. Contents: [<TextNode: \'\\n\\n                <div cl\'>, <Variable Node: toc|safe>, <TextNode: \'\\n                </div>\\n\\n\'>, <django.template.library.SimpleNode object at 0x7f22a0514198>, <TextNode: \'\\n                    <ul>\'>, <For Node: for post in recent_post_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050da58>, <TextNode: \'\\n                    <ul>\'>, <For Node: for date in date_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050ddd8>, <TextNode: \'\\n                    <ul>\'>, <For Node: for category in category_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a0514c88>, <TextNode: \'\\n                    <ul>\'>, <For Node: for tag in tag_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.defaulttags.URLNode object at 0x7f22a0510438>, <TextNode: \'"><span class="ion-social\'>]>}]'
+ "GET / HTTP/1.1" 200 13126 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<input type="email" name="email" maxlength="255" id="id_email" required />'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea>'
+ "GET /post/2/ HTTP/1.1" 200 8600 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<input type="email" name="email" maxlength="255" id="id_email" required />'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea>'
+ "GET /post/2/ HTTP/1.1" 200 8600 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<input type="email" name="email" maxlength="255" id="id_email" required />'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'url' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 158, in __getitem__
+    field = self.fields[name]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/forms.py", line 164, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'url' not found in 'CommentForm'. Choices are: email, name, text."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CommentForm' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in '<tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" maxlength="100" id="id_name" required /></td></tr>\n<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" maxlength="255" id="id_email" required /></td></tr>\n<tr><th><label for="id_text">Text:</label></th><td><textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea></td></tr>'
+ Exception while resolving variable 'error' in template 'blog/detail.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/forms/boundfield.py", line 77, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'BoundField' object has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '<textarea name="text" cols="40" id="id_text" rows="10" required>\n</textarea>'
+ "GET /post/2/ HTTP/1.1" 200 8600 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ Exception while resolving variable 'error_msg' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_msg] in "[{'None': None, 'False': False, 'True': True}, {'csrf_token': <SimpleLazyObject: '3hqNyoVeKpwVM3IaDhg2471amWYcAVxgsim0BBcUVSmMZIEe7cyxBBmd6G63UEPS'>, 'request': <WSGIRequest: GET '/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a24339b0>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a242e320>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a2438620>>}, {}, {'first': False, 'left': [], 'page_obj': <Page 1 of 3>, 'is_paginated': True, 'right_has_more': False, 'object_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'last': False, 'left_has_more': False, 'right': range(2, 4), 'post_list': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, 'view': <blog.views.IndexView object at 0x7f22a2433da0>, 'paginator': <django.core.paginator.Paginator object at 0x7f22a2418470>}, {'block': <Block Node: main. Contents: [<TextNode: '\\n                    '>, <IfNode>, <TextNode: '\\n\\n                    '>, <For Node: for post in post_list, tail_len: 25>, <TextNode: '\\n\\n                    <!-'>, <IfNode>, <TextNode: '-->\\n                     '>, <Variable Node: post_list.number>, <TextNode: ' 夜 / 共 '>, <Variable Node: post_list.paginator.num_pages>, <TextNode: ' 夜-->\\n                   '>, <IfNode>, <TextNode: '-->\\n                    <'>, <IfNode>, <TextNode: '-->\\n\\n                    '>, <IfNode>, <TextNode: '\\n                '>]>}]"
+ Exception while resolving variable 'has_previous' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_previous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_previous] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'number' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'number'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [number] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'paginator' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [paginator] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'has_next' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 265, in __getitem__
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QuerySet' object has no attribute 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'has_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in '<QuerySet [<Post: 斗地主>, <Post: 学车>]>'
+ Exception while resolving variable 'toc' in template 'blog/index.html'. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/dist-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'toc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [toc] in '[{\'None\': None, \'False\': False, \'True\': True}, {\'csrf_token\': <SimpleLazyObject: \'3hqNyoVeKpwVM3IaDhg2471amWYcAVxgsim0BBcUVSmMZIEe7cyxBBmd6G63UEPS\'>, \'request\': <WSGIRequest: GET \'/\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22a24339b0>, \'DEFAULT_MESSAGE_LEVELS\': {\'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20, \'WARNING\': 30}, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22a242e320>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22a2438620>>}, {}, {\'first\': False, \'left\': [], \'page_obj\': <Page 1 of 3>, \'is_paginated\': True, \'right_has_more\': False, \'object_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'last\': False, \'left_has_more\': False, \'right\': range(2, 4), \'post_list\': <QuerySet [<Post: 斗地主>, <Post: 学车>]>, \'view\': <blog.views.IndexView object at 0x7f22a2433da0>, \'paginator\': <django.core.paginator.Paginator object at 0x7f22a2418470>}, {\'block\': <Block Node: toc. Contents: [<TextNode: \'\\n\\n                <div cl\'>, <Variable Node: toc|safe>, <TextNode: \'\\n                </div>\\n\\n\'>, <django.template.library.SimpleNode object at 0x7f22a0514198>, <TextNode: \'\\n                    <ul>\'>, <For Node: for post in recent_post_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050da58>, <TextNode: \'\\n                    <ul>\'>, <For Node: for date in date_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a050ddd8>, <TextNode: \'\\n                    <ul>\'>, <For Node: for category in category_list, tail_len: 7>, <TextNode: \'\\n                    </ul\'>, <django.template.library.SimpleNode object at 0x7f22a0514c88>, <TextNode: \'\\n                    <ul>\'>, <For Node: for tag in tag_list, tail_len: 5>, <TextNode: \'\\n                    </ul\'>, <django.template.defaulttags.URLNode object at 0x7f22a0510438>, <TextNode: \'"><span class="ion-social\'>]>}]'
+ "GET / HTTP/1.1" 200 13126 
+ "GET /static/blog/css/pace.css HTTP/1.1" 404 98 
+ "GET /static/blog/css/custom.css HTTP/1.1" 404 100 
+ "GET /static/blog/css/highlights/vim.css HTTP/1.1" 404 108 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 
+ "GET /static/blog/js/pace.min.js HTTP/1.1" 404 100 
+ "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 404 108 
+ "GET /static/blog/js/script.js HTTP/1.1" 404 98 

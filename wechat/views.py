@@ -74,9 +74,8 @@ def main_handle(xml):
         return parser_text(xml,text)
 
     if msg_type == 'text':
-
         for search_str in search_text:
-            if re.compile(search_str,msg_content,re.IGNORECASE):
+            if bool(re.search(search_str,msg_content,re.IGNORECASE)):
                 text='http://fixyou.me/tag_name/'+msg_content+'/'
                 return parser_text(xml,text)
 
