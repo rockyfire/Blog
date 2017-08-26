@@ -13,13 +13,17 @@
 
 不如把这些笔记转移到自己开发的Django博客中,微信公众号和博客对接,这样以后开微信就可以看到,方便
 
-第一步,博客                              --Get
+第一步,博客                              
 
 第二步,微信公众号 
-网站搭建有问题退回到第一步  2017-08-16
 
+通过微信服务器转发到你的自己的服务器,这中间可能有个小错误要注意一下,Django有一个csrf保护机制([跨站点伪造请求](http://www.cnblogs.com/lins05/archive/2012/12/02/2797996.html)),验证Token的时候没有事情,是因为是使用Get请求发送的,但是post请求发送的就不行了,这就必须在weixin/views.py中加入@csrf_exempt
+
+在我的项目中启用了Django的loggings,loggings指定的输出文件中最好不要修改其内容,修改的话要重启Django开可以重新写入日志.
 
 第三步,搬运笔记
+
+本来是想调用印象笔记的API,快速写入到我的博客中,但是印象笔记开放的测试API是对 https://sandbox.evernote.com 这个网站的不是https://www.yinxiang.com/ 这就很尴尬了.
 
 第四步,博客和微信公众号对接
 
